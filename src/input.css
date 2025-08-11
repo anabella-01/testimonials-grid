@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/BarlowSemiCondensed-Medium.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/BarlowSemiCondensed-SemiBold.ttf") format("woff2");
+}
+
+@theme {
+--color-Purple-50:  hsl(260, 100%, 95%);
+--color-Purple-300: hsl(264, 82%, 80%);
+--color-Purple-500: hsl(263, 55%, 52%);
+--color-White: hsl(0, 0%, 100%);
+--color-Grey-100: hsl(214, 17%, 92%);
+--color-Grey-200: hsl(0, 0%, 81%);
+--color-Grey-400: hsl(224, 10%, 45%);
+--color-Grey-500: hsl(217, 19%, 35%);
+--color-Dark-blue: hsl(219, 29%, 14%);
+--color-Black: hsl(0, 0%, 7%);
+
+--font-Barlow:"Barlow Semi Condensed";
+
+}
+
+@layer components {
+  .card {
+    border-radius: 8px;
+    width: 327px;
+    box-shadow: 40px 60px 50px -47px hsl(224, 10%, 45%);
+    padding: 26px 32px 32px;
+  }
+
+  .card-background{
+    background-image: url("../assets//images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right 65px top ;
+  }
+}
+
